@@ -3,12 +3,22 @@ package iloveyouboss;
 
 import org.junit.Test;
 
-import static org.junit.Assert.fail;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class ScoreCollectionTest {
   @Test
-  public void test() throws Exception {
-    fail("まだ実装されていません");
+  public void answersArithmeticMeanOfTwoNumbers() throws Exception {
+    // Arrange
+    ScoreCollection collection = new ScoreCollection();
+    collection.add(() -> 5);
+    collection.add(() -> 7);
+
+    // Act
+    int actualResult = collection.arithmeticMean();
+
+    // Assert
+    assertThat(actualResult, equalTo(6));
   }
 
 }
