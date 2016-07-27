@@ -39,12 +39,8 @@ public class ProfileTest {
   @Test
   public void matchAnswersTrueForAnyDontCareCriteria() {
     // Arrange
-    Answer profileAnswer = new Answer(Bool.FALSE, question);
-    profile.add(profileAnswer);
-    Criteria criteria = new Criteria();
-    Answer criteriaAnswer = new Answer(Bool.TRUE, question);
-    Criterion criterion = new Criterion(Weight.DontCare, criteriaAnswer);
-    criteria.add(criterion);
+    profile.add(new Answer(Bool.FALSE, question));
+    criteria.add(new Criterion(Weight.DontCare, new Answer(Bool.TRUE, question)));
 
     // Act
     boolean matches = profile.matches(criteria);
