@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * マッチングの基準を管理するクラス
+ * Criterionを複数保持するコンテナ
  *
  * Created by koji on 2016/07/27.
  */

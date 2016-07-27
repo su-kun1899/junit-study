@@ -1,7 +1,7 @@
 package iloveyouboss;
 
 /**
- * 回答を管理するクラス
+ * 質問への回答を管理するクラス
  *
  * Created by koji on 2016/07/27.
  */

@@ -1,7 +1,7 @@
 package iloveyouboss;
 
 /**
- * 基準を管理するクラス
+ * 条件を管理するクラス
  *
  * Created by koji on 2016/07/27.
  */

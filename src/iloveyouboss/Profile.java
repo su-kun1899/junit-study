@@ -25,6 +25,12 @@ public class Profile {
     answers.put(answer.getQuestionText(), answer);
   }
 
+  /**
+   * 条件に対してプロフィールがマッチしているか判定します
+   *
+   * @param criteria 条件
+   * @return マッチしている場合true
+   */
   public boolean matches(Criteria criteria) {
     score = 0;
 
