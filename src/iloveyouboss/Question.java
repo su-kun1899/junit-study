@@ -20,8 +20,8 @@ public abstract class Question {
     return text;
   }
 
-  public String[] getAnswerChoices() {
-    return answerChoices;
+  public String getAnswerChoice(int i) {
+    return answerChoices[i];
   }
 
   public boolean match(Answer answer) {
@@ -31,8 +31,8 @@ public abstract class Question {
   public abstract boolean match(int expected, int actual);
 
   public int indexOf(String matchingAnswerChoice){
-    for (int i = 0; i < getAnswerChoices().length; i++) {
-      if (getAnswerChoices()[i].equals(matchingAnswerChoice)) {
+    for (int i = 0; i < answerChoices.length; i++) {
+      if (answerChoices[i].equals(matchingAnswerChoice)) {
         return i;
       }
     }
